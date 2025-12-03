@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>grid</title>
+        <title>flexbox_justify_content</title>
+     <style>
+        .box {
+            height: 75px;
+            width: 75px;
+            border: 3px solid black;
+            margin: 5px;
+        }
+        #heading {
+            text-align: center;
+        }
+        #container {
+            height: 300px;
+            width: 600px;
+            border: 3px solid black;
+            display: grid;  
+            margin: 20px;
+            padding: 10px;   
+            grid-template-columns: 80px 100px;
+            grid-template-rows: 80px 100px;
+        }
+        #box1 { 
+            background-color: blue;
+            grid-column: 2/2;
+            grid-row: 2/2;
+        }
+        #box2 { 
+            background-color: red;
+            grid-column: 2/2;
+            grid-row: 1/2;
+
+        }
+        #box3 { 
+            background-color: blueviolet;
+            grid-column: 1/2;
+            grid-row: 2/2;
+
+        }
+        #box4 { 
+            background-color: aqua;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+    </style>
+</head>
+<body>
+     <h1 id="heading">grid container</h1>
+        <div id="container">
+        <div id="box1" class="box">flexbox item1</div>
+        <div id="box2" class="box">flexbox item2</div>
+        <div id="box3" class="box">flexbox item3</div>
+        <div id="box4" class="box">flexbox item4</div>
+    </div>
+</body>
+</html>

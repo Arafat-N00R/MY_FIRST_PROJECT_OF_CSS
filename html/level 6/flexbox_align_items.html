@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flexbox_align_items</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            margin: 5px;
+        }
+        #heading {
+            text-align: center;
+        }
+        #container {
+            height: 600px;
+            width: 600px;
+            border: 3px solid black;
+            display: flex;  
+            margin: 20px;
+            padding: 10px;   
+            justify-content: center;
+            align-items: end;
+
+        }
+        #box1 { background-color: blue;}
+        #box3 { background-color: red;}
+        #box2 { background-color: blueviolet;}
+        #box4 { background-color: aqua;}
+
+    </style>
+</head>
+<body>
+    <h1 id="heading">flex container</h1>
+    <div id="container">
+        <div id="box1" class="box">flexbox item1</div>
+        <div id="box2" class="box">flexbox item2</div>
+        <div id="box3" class="box">flexbox item3</div>
+        <div id="box4" class="box">flexbox item4</div>
+    </div>
+</body>
+</html>

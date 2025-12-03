@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>border_radius</title>
+<style>
+    * { margin: 0; padding: 0; }
+    .pad {
+        height: 100px; width: 100px;
+        margin: 5px;
+        padding: 2px;
+        
+    }
+    #first {
+        box-sizing: border-box;
+        border: 2px solid;
+        background-color: aquamarine;
+    }
+    #first1 {
+        box-sizing: content-box;
+        border: 3px dashed red;
+        background-color: blue;
+    }
+    #first2 {
+        
+        text-align: center;
+        border: 2px solid;
+        border-radius: 50px;
+        background-color: brown;
+    }
+    #first3 {
+
+        text-align: center;
+        border: 2px solid;
+        border-radius: 5px 5px 10px 20px;
+        background-color: brown;
+    }
+</style>
+</head>
+<body>
+    <div id="first" class="pad">first</div>
+    <div id="first1" class="pad">first1</div>
+    <div id="first2" class="pad">first2</div>
+    <div id="first3" class="pad">first</div>
+</body>
+</html>

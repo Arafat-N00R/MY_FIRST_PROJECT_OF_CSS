@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flexbox_items_order</title>
+        <title>flexbox_justify_content</title>
+     <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            margin: 5px;
+        }
+        #heading {
+            text-align: center;
+        }
+        #container {
+            height: 150px;
+            width: 600px;
+            border: 3px solid black;
+            display: flex;  
+            margin: 20px;
+            padding: 10px;   
+            justify-content: center;
+
+        }
+        #box1 { 
+            background-color: blue;
+            order: 4;
+        }
+        #box2 { 
+            background-color: red;
+            order: 2;
+        }
+        #box3 { 
+            background-color: blueviolet;
+            order: 3;
+        }
+        #box4 { 
+            background-color: aqua;
+            order: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="heading">flex container</h1>
+    <div id="container">
+        <div id="box1" class="box">flexbox item1</div>
+         <div id="box2" class="box">flexbox item2</div>
+         <div id="box3" class="box">flexbox item3</div>
+          <div id="box4" class="box">flexbox item4</div>
+</body>
+</html>

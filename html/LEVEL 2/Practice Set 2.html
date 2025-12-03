@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice Set 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #bar {
+            background-color: aquamarine;
+            color: rgba(103, 18, 18, 0.8);
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        main {
+            height: 500px;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #product {
+            width: 200px;
+            height: 250px;
+            /* background-color: green;
+            background-image: url(jeans.webp);
+            background-repeat: no-repeat;
+            background-position: center;*/
+            /* Correct background shorthand */
+            background: rgb(255, 0, 0) url('image.png') no-repeat center;
+            background-size: contain; /* Needed for image scaling */
+
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="bar">This is my nav bar</div>
+    </header>
+
+    <main>
+        <div id="product">Product 1</div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
